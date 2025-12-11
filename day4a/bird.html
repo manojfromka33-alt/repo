@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird</title>
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            overflow: hidden;
+            background: linear-gradient(to top, white, skyblue);
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        #bird {
+            position: absolute;
+            left: 100px;
+            top: 200px;
+            font-size: 70px;
+        }
+        #scorebox {
+            font-size: 28px;
+            margin: 10px;
+            font-weight: bold;
+        }
+        .pipe {
+            position: absolute;
+            width: 70px;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+
+    <p id="scorebox">Score: 0</p>
+
+    <div id="bird">🕊</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="birdscript.js"></script>
+
+</body>
+</html>
